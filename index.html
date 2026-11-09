@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VoltEdge Electric - Electrician in Denver, CO | Panels, EV Chargers, Flat-Rate Pricing</title>
+<meta name="description" content="VoltEdge Electric, Denver CO. Licensed master electricians: panel upgrades from $1,850, EV charger installs, lighting, rewiring and safety inspections. Upfront flat-rate pricing. Call (303) 555-0119.">
+<style>
+  :root{
+    --char:#14161a; --char2:#1c1f24; --char3:#24282f;
+    --volt:#ffd60a; --volt2:#ffe45c;
+    --paper:#101114; --ink:#e8eaed; --soft:#9aa3ad; --line:#2e333b;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);
+    font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:"Consolas","SF Mono","Roboto Mono",monospace;letter-spacing:.01em;line-height:1.15;font-weight:700}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  .tag{display:inline-block;border:1px solid var(--volt);color:var(--volt);font-size:11px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;padding:6px 13px;border-radius:2px}
+
+  header{position:sticky;top:0;z-index:60;background:rgba(20,22,26,.97);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+  .brand{color:#fff;text-decoration:none;font-family:Consolas,monospace;font-size:22px;font-weight:700}
+  .brand span{color:var(--volt)}
+  .brand small{display:block;font-family:"Segoe UI",sans-serif;font-size:10px;letter-spacing:.3em;color:var(--soft);font-weight:600}
+  .links{display:flex;gap:26px;align-items:center}
+  .links a{color:#c6ccd3;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+  .links a:hover{color:var(--volt)}
+  .callbtn{background:var(--volt);color:#14161a!important;padding:11px 18px;border-radius:3px;font-weight:700}
+  .callbtn:hover{background:var(--volt2)}
+  @media(max-width:820px){.links a:not(.callbtn){display:none}}
+
+  .hero{background:
+      linear-gradient(rgba(255,214,10,.045) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,214,10,.045) 1px,transparent 1px),
+      radial-gradient(900px 480px at 85% -10%,rgba(255,214,10,.13),transparent 60%),
+      var(--char);
+    background-size:44px 44px,44px 44px,auto,auto;
+    padding:70px 0 60px;border-bottom:1px solid var(--line)}
+  .hero h1{font-size:clamp(32px,5.2vw,54px);color:#fff;max-width:780px;margin:18px 0 16px}
+  .hero h1 span{color:var(--volt)}
+  .hero p{max-width:600px;color:var(--soft);font-size:18px;margin-bottom:28px}
+  .badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+  .badge{border:1px solid var(--line);background:var(--char2);padding:9px 15px;font-size:13px;font-weight:700;letter-spacing:.05em;border-radius:3px}
+  .badge b{color:var(--volt)}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.06em;padding:15px 28px;border-radius:3px;font-size:15px;margin-right:12px}
+  .btn-v{background:var(--volt);color:#14161a}.btn-v:hover{background:var(--volt2)}
+  .btn-g{border:1px solid #4a515a;color:#fff}.btn-g:hover{border-color:var(--volt);color:var(--volt)}
+
+  section{padding:62px 0}
+  .sec-head{margin-bottom:30px}
+  .sec-head h2{font-size:clamp(25px,3.4vw,36px);color:#fff;margin-top:14px}
+  .sec-head p{color:var(--soft);max-width:640px;margin-top:8px}
+
+  .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .svc{background:var(--char2);border:1px solid var(--line);padding:24px;border-radius:4px;position:relative}
+  .svc:before{content:"";position:absolute;top:0;left:0;width:38px;height:4px;background:var(--volt)}
+  .svc .ic{font-size:26px;margin-bottom:10px}
+  .svc h3{font-size:17px;color:#fff;margin-bottom:6px}
+  .svc p{color:var(--soft);font-size:14px}
+  .price{margin-top:14px;font-family:Consolas,monospace;color:var(--volt);font-size:19px;font-weight:700}
+  .price small{font-family:"Segoe UI",sans-serif;color:var(--soft);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+
+  .flat{background:var(--char2);border:1px solid var(--volt);border-radius:4px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+  @media(max-width:760px){.flat{grid-template-columns:1fr}}
+  .flat h3{color:#fff;font-size:24px;margin-bottom:10px}
+  .flat p{color:var(--soft);font-size:15px}
+  .flat ul{list-style:none}
+  .flat li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:15px}
+  .flat li:before{content:"✓ ";color:var(--volt);font-weight:900}
+  .flat li:last-child{border-bottom:none}
+
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:760px){.split{grid-template-columns:1fr}}
+  .dom{background:linear-gradient(160deg,var(--char3),var(--char2));border:1px solid var(--line);border-radius:4px;padding:28px}
+  .dom h3{color:var(--volt);font-size:19px;margin-bottom:10px}
+  .dom p{color:var(--soft);font-size:15px}
+
+  .reviews{background:var(--char);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .ratingline{font-size:18px;font-weight:700;color:#fff;margin-bottom:24px}
+  .ratingline .stars{color:var(--volt);letter-spacing:3px;font-size:21px}
+  .rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+  .rev{background:var(--char2);border:1px solid var(--line);padding:24px;border-radius:4px}
+  .rev .stars{color:var(--volt);letter-spacing:2px}
+  .rev p{color:#c6ccd3;margin:10px 0 14px;font-size:15px}
+  .rev b{color:var(--volt);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+
+  .areas{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{border:1px solid var(--line);background:var(--char2);padding:8px 16px;border-radius:999px;font-size:14px}
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:22px}
+  .info{background:var(--char2);border:1px solid var(--line);border-radius:4px;padding:22px}
+  .info b{display:block;color:var(--volt);text-transform:uppercase;font-size:11px;letter-spacing:.2em;margin-bottom:6px}
+  .info a{color:#fff;font-weight:700;text-decoration:none;font-size:18px}
+
+  .formsec{background:var(--char)}
+  form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){form{grid-template-columns:1fr}}
+  label{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--volt);display:block;margin-bottom:6px}
+  input,select,textarea{width:100%;padding:13px;border:1px solid var(--line);border-radius:3px;font-size:15px;background:var(--char2);color:var(--ink);font-family:inherit}
+  textarea{grid-column:1/-1;min-height:96px}
+  button.submit{background:var(--volt);color:#14161a;border:none;padding:16px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:15px;border-radius:3px;cursor:pointer;grid-column:1/-1}
+  button.submit:hover{background:var(--volt2)}
+  .formnote{grid-column:1/-1;font-size:13px;color:var(--soft);text-align:center}
+
+  footer{background:#0b0c0e;color:#7d868f;padding:44px 0 90px;font-size:14px;border-top:1px solid var(--line)}
+  footer .fbrand{color:#fff;font-family:Consolas,monospace;font-size:19px;font-weight:700;margin-bottom:10px}
+  footer .fbrand span{color:var(--volt)}
+  footer a{color:var(--volt);font-weight:700;text-decoration:none}
+  .demoflag{margin-top:22px;border-top:1px solid var(--line);padding-top:18px;font-size:13px;color:#5f676f}
+
+  .sticky-call{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--volt);color:#14161a;text-align:center;padding:14px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:16px;text-decoration:none;box-shadow:0 -4px 18px rgba(0,0,0,.5)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">VOLT<span>EDGE</span> ELECTRIC<small>Licensed · Insured · Denver CO</small></a>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#pricing">Flat-Rate</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#quote" class="callbtn">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="tag">Licensed · Insured · Done to Code</span>
+    <h1>Electricians who quote <span>one flat price</span> - and keep it</h1>
+    <p>Panel upgrades, EV chargers, lighting and fault finding across Denver. Master electricians only, shoe covers on, and a written flat-rate price before we touch a wire.</p>
+    <div class="badges">
+      <div class="badge">CO State Licence <b>#EC.0102345</b></div>
+      <div class="badge"><b>Master</b> Electricians</div>
+      <div class="badge">Insured to <b>$2M</b></div>
+      <div class="badge"><b>BBB A+</b> Accredited</div>
+      <div class="badge"><b>4.9★</b> · 860+ Google reviews</div>
+    </div>
+    <a class="btn btn-v" href="tel:+13035550119">Call (303) 555-0119</a>
+    <a class="btn btn-g" href="#quote">Request a Quote</a>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Services</span>
+      <h2>Everything electrical, one crew</h2>
+      <p>Starting prices for the Denver metro. Your exact flat-rate price is confirmed in writing after a quick look at the job - it never goes up mid-job.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="ic">⚡</div><h3>Panel Upgrades</h3><p>100A to 200A service upgrades for older homes, remodels and EV-ready power. Permits handled.</p><div class="price"><small>From</small> $1,850</div></div>
+      <div class="svc"><div class="ic">🔌</div><h3>EV Charger Install</h3><p>Level 2 home charging for Tesla, Rivian, Ford and more. Load calculation and circuit included.</p><div class="price"><small>From</small> $650</div></div>
+      <div class="svc"><div class="ic">🛡️</div><h3>Safety Inspection</h3><p>Whole-home electrical health check: panel, grounding, GFCI/AFCI protection and a written report.</p><div class="price"><small>From</small> $149</div></div>
+      <div class="svc"><div class="ic">💡</div><h3>Lighting &amp; Fans</h3><p>Recessed lighting, pendants, ceiling fans and smart switches, patched and finished cleanly.</p><div class="price"><small>From</small> $125</div></div>
+      <div class="svc"><div class="ic">🧰</div><h3>Fault Finding</h3><p>Tripping breakers, dead outlets, flickering lights. We find the cause, not just the symptom.</p><div class="price"><small>Service call from</small> $89</div></div>
+      <div class="svc"><div class="ic">🏠</div><h3>Rewiring</h3><p>Knob-and-tube and aluminium wiring replaced room by room, with minimal disruption to your home.</p><div class="price"><small>Per room from</small> $950</div></div>
+      <div class="svc"><div class="ic">🔋</div><h3>Generator Hookups</h3><p>Transfer switches and inlet boxes so a portable generator powers your essentials safely.</p><div class="price"><small>From</small> $1,200</div></div>
+      <div class="svc"><div class="ic">➕</div><h3>Outlets &amp; Circuits</h3><p>New outlets, dedicated circuits for hot tubs, workshops and home offices, USB and GFCI upgrades.</p><div class="price"><small>From</small> $110</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" style="padding-top:0">
+  <div class="wrap">
+    <div class="flat">
+      <div>
+        <span class="tag">No Hourly Billing</span>
+        <h3 style="margin-top:14px">Flat-rate pricing, agreed before we start</h3>
+        <p>Hourly billing rewards slow work. We price the whole job from our standard rate book, show it to you in writing, and that number is final - even if the job takes longer than expected.</p>
+      </div>
+      <ul>
+        <li>Written quote before any work begins</li>
+        <li>Same price nights, weekends and holidays for members</li>
+        <li>2-year warranty on labour and materials</li>
+        <li>Licensed, background-checked electricians - never day labour</li>
+        <li>We wear shoe covers and vacuum before we leave</li>
+      </ul>
+    </div>
+    <div class="split" style="margin-top:16px">
+      <div class="dom"><h3>🏠 For Homes</h3><p>Panels, lighting, EV chargers, remodels and repairs - with tidy work, honest timelines and a walkthrough of everything we touched before we leave.</p></div>
+      <div class="dom"><h3>🏢 For Businesses</h3><p>Retail fit-outs, office lighting, three-phase work and scheduled maintenance for Denver shops, cafes and warehouses. Certificates and paperwork handled.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">Reviews</span><h2>Denver keeps our number saved</h2></div>
+    <div class="ratingline"><span class="stars">★★★★★</span> 4.9 rating · 860+ verified Google reviews</div>
+    <div class="rev-grid">
+      <div class="rev"><div class="stars">★★★★★</div><p>"Panel upgrade quoted at $1,900 on Tuesday, done Thursday for exactly $1,900. Inspector passed it first try. This is how trades should run."</p><b>Greg H. - Lakewood</b></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"They installed our EV charger and found a scorched breaker while they were in the panel. Fixed both same visit, showed me photos of everything."</p><b>Alisha R. - Aurora</b></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"Breaker kept tripping at 9pm. VoltEdge answered, talked me through making it safe, and had it repaired next morning at the price they quoted on the phone."</p><b>Tom &amp; Ellie B. - Arvada</b></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">Service Area</span><h2>Covering the Denver metro</h2></div>
+    <div class="areas">
+      <span class="chip">Denver</span><span class="chip">Aurora</span><span class="chip">Lakewood</span><span class="chip">Arvada</span>
+      <span class="chip">Littleton</span><span class="chip">Englewood</span><span class="chip">Westminster</span><span class="chip">Thornton</span>
+      <span class="chip">Centennial</span><span class="chip">Highlands Ranch</span><span class="chip">Parker</span><span class="chip">Wheat Ridge</span>
+    </div>
+    <div class="info-grid">
+      <div class="info"><b>Phone</b><a href="tel:+13035550119">(303) 555-0119</a></div>
+      <div class="info"><b>Workshop</b>2250 S Kalamath St, Denver, CO 80223</div>
+      <div class="info"><b>Hours</b>Mon-Fri 7am-6pm · Sat 8am-2pm · 24/7 emergency</div>
+      <div class="info"><b>Licence</b>CO State Electrical Licence #EC.0102345</div>
+    </div>
+  </div>
+</section>
+
+<section class="formsec" id="quote" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Free Quote</span>
+      <h2>Describe the job, get a flat price</h2>
+      <p>Tell us what's happening. If you have a photo of the panel or the problem area, mention it in your message and we will tell you how to send it - photos help us quote faster and more accurately.</p>
+    </div>
+    <form onsubmit="event.preventDefault();alert('Thanks! VoltEdge will call you back with next steps.');">
+      <div><label for="e-name">Your name</label><input id="e-name" type="text" placeholder="Full name" required></div>
+      <div><label for="e-phone">Phone</label><input id="e-phone" type="tel" placeholder="(303) 555-0000" required></div>
+      <div><label for="e-svc">Job type</label>
+        <select id="e-svc"><option>Panel upgrade</option><option>EV charger</option><option>Lighting / fans</option><option>Fault finding</option><option>Rewiring</option><option>Safety inspection</option><option>Something else</option></select></div>
+      <div><label for="e-type">Property</label>
+        <select id="e-type"><option>Home</option><option>Business</option><option>Rental property</option></select></div>
+      <textarea placeholder="Describe the job or the problem - and mention if you have a photo of it we can look at."></textarea>
+      <button class="submit" type="submit">Request My Free Quote</button>
+      <div class="formnote">Written flat-rate quote before any work. No obligation, no spam.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand">VOLT<span>EDGE</span> ELECTRIC</div>
+    <p>2250 S Kalamath St, Denver, CO 80223 · <a href="tel:+13035550119">(303) 555-0119</a> · CO Licence #EC.0102345</p>
+    <p style="margin-top:6px">Panels, EV chargers, lighting and fault finding across the Denver metro.</p>
+    <div class="demoflag">
+      <p>Concept demo website designed by Azher for electrical businesses. Not a real business.</p>
+      <p style="margin-top:4px">Designed by Azher · Malegaon, Maharashtra 423203, India</p>
+    </div>
+  </div>
+</footer>
+
+<a class="sticky-call" href="tel:+13035550119">☎ Tap to Call - (303) 555-0119</a>
+
+</body>
+</html>
